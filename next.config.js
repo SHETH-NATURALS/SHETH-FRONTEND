@@ -27,7 +27,7 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname: "https://uuoyivmnvhlxlxwjemoi.supabase.co",
+        hostname: "uuoyivmnvhlxlxwjemoi.supabase.co",
       },
     ],
   },
