@@ -1,6 +1,7 @@
 const path = require("path")
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-module.exports = {
+module.exports = withMT({
   darkMode: "class",
   presets: [require("@medusajs/ui-preset")],
   content: [
@@ -34,6 +35,10 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        'primary': '#e73e28',
+        'primary-25': '#fbeff2',
+        'primary-600': '#79043c',
+        'background': '#faf9f5',
       },
       borderRadius: {
         none: "0px",
@@ -159,4 +164,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-radix")()],
-}
+})
