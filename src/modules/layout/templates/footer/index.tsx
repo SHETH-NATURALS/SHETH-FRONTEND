@@ -14,6 +14,8 @@ import BulbIcon from "../../../../assets/BulbIcon"
 import GlutenIcon from "../../../../assets/GlutenIcon"
 import IngredientIcon from "../../../../assets/IngredientIcon"
 
+import { format } from "date-fns"
+
 
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
@@ -93,7 +95,7 @@ export default async function Footer() {
         </div>
         <div className="flex w-full justify-between text-white bg-black p-5 text-sm px-28">
           <p>
-            © 2023 Sheth. All rights reserved.
+            © {format(new Date(), 'yyyy')} Sheth. All rights reserved.
           </p>
           <div className="flex gap-4">
             <p>Terms and Conditions</p>

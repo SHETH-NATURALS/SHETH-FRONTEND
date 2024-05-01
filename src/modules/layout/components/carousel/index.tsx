@@ -2,7 +2,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
  
 export default function CarouselWithContent() {
   return (
-    <Carousel className="h-[75vh]" navigation={({ setActiveIndex, activeIndex, length }) => (
+    <Carousel className="h-[629px]" loop={true} navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
@@ -21,22 +21,18 @@ export default function CarouselWithContent() {
           alt="image 1"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-          <div className="w-3/4 text-center md:w-2/4">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
+        <div className="absolute inset-0 h-full w-full flex justify-center items-end bg-black/75">
+          <div className="w-3/4 text-center md:w-2/4 my-28">
+            <h1 className="text-white font-bold m-8 text-3xl md:text-4xl lg:text-5xl">
               Unlock Your Natural Glow!
-            </Typography>
-            <div className="flex justify-center gap-2">
-              <Button size="lg" color="white" variant="outlined">
+            </h1>
+            <div className="flex justify-center gap-8">
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Shop Now
-              </Button>
-              <Button size="lg" color="white" variant="outlined">
+              </button>
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Learn More
-              </Button>
+              </button>
             </div>
           </div>
         </div>
@@ -47,22 +43,18 @@ export default function CarouselWithContent() {
           alt="image 2"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-          <div className="w-3/4 text-center md:w-2/4">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
+        <div className="absolute inset-0 h-full w-full flex justify-center items-end bg-black/75">
+          <div className="w-3/4 text-center md:w-2/4 my-28">
+            <h1 className="text-white font-bold m-8 text-3xl md:text-4xl lg:text-5xl">
               Unlock Your Natural Glow!
-            </Typography>
-            <div className="flex justify-center gap-2">
-              <Button size="lg" color="white" variant="outlined">
+            </h1>
+            <div className="flex justify-center gap-8">
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Shop Now
-              </Button>
-              <Button size="lg" color="white" variant="outlined">
+              </button>
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Learn More
-              </Button>
+              </button>
             </div>
           </div>
         </div>
@@ -73,22 +65,18 @@ export default function CarouselWithContent() {
           alt="image 3"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-          <div className="w-3/4 text-center md:w-2/4">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
+        <div className="absolute inset-0 h-full w-full flex justify-center items-end bg-black/75">
+          <div className="w-3/4 text-center md:w-2/4 my-28">
+            <h1 className="text-white font-bold m-8 text-3xl md:text-4xl lg:text-5xl">
               Unlock Your Natural Glow!
-            </Typography>
-            <div className="flex justify-center gap-2">
-              <Button size="lg" color="white" variant="outlined">
+            </h1>
+            <div className="flex justify-center gap-8">
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Shop Now
-              </Button>
-              <Button size="lg" color="white" variant="outlined">
+              </button>
+              <button className="text-white uppercase font-semibold px-8 py-2 border border-white">
                 Learn More
-              </Button>
+              </button>
             </div>
           </div>
         </div>
