@@ -1,5 +1,6 @@
 const path = require("path")
 const withMT = require("@material-tailwind/react/utils/withMT");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = withMT({
   darkMode: "class",
@@ -12,6 +13,12 @@ module.exports = withMT({
     "./node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'opensans': [
+        '"Open Sans"',
+        'sans-serif',
+      ],
+    },
     extend: {
       transitionProperty: {
         width: "width margin",
@@ -38,6 +45,7 @@ module.exports = withMT({
         'primary': '#e73e28',
         'primary-25': '#fbeff2',
         'primary-600': '#79043c',
+        'primary-700': '#510228',
         'background': '#faf9f5',
       },
       borderRadius: {
@@ -73,6 +81,10 @@ module.exports = withMT({
           "Helvetica Neue",
           "Ubuntu",
           "sans-serif",
+        ],
+        'opensans': [
+          '"Open Sans"',
+          'sans-serif',
         ],
       },
       keyframes: {

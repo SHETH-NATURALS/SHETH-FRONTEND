@@ -27,13 +27,13 @@ export default async function Nav() {
               ShethLogo
             </LocalizedClientLink>
           </div>
-          <div className="hidden h-full md:flex gap-x-8 items-center font-semibold">
-            <LocalizedClientLink href="/">Home</LocalizedClientLink>
-            <LocalizedClientLink href="/">Mizizi</LocalizedClientLink>
-            <LocalizedClientLink href="/">Sheba</LocalizedClientLink>
-            <LocalizedClientLink href="/">Gifts & Sets</LocalizedClientLink>
-            <LocalizedClientLink href="/">Branches</LocalizedClientLink>
-            <LocalizedClientLink href="/">Our Brand</LocalizedClientLink>
+          <div className="hidden h-full md:flex gap-x-8 items-center font-opensans font-bold">
+            <LocalizedClientLink className=" focus:text-primary" href="/">Home</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">Mizizi</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">Sheba</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">Gifts & Sets</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">Branches</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/brand">Our Brand</LocalizedClientLink>
             {/* <div className="h-full">
               <SideMenu regions={regions} />
             </div> */}
