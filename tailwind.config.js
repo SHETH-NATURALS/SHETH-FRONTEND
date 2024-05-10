@@ -46,6 +46,7 @@ module.exports = withMT({
         'primary-25': '#fbeff2',
         'primary-600': '#79043c',
         'primary-700': '#510228',
+        'primary-750': '#3d021e',
         'background': '#faf9f5',
       },
       borderRadius: {

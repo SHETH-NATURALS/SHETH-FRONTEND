@@ -51,8 +51,8 @@ export default async function Footer() {
             <h3 className="text-2xl font-semibold mb-6">How Can We Help?</h3>
             <ul className="flex flex-col gap-3">
               <li>Sheth Branches</li>
-              <li>Contact Us</li>
-              <li>FAQ</li>
+              <LocalizedClientLink href="/contact">Contact Us</LocalizedClientLink>
+              <LocalizedClientLink href="/faqs">FAQs</LocalizedClientLink>
               <li>Our Brand</li>
               <li>Blog</li>
             </ul>
