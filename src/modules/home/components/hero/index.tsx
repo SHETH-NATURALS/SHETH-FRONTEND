@@ -8,12 +8,14 @@ import Blogs from "../Blogs"
 import VirtualAnalysis from "../VirtualAnalysis"
 import NewIn from "../NewIn"
 import BrandOffer from "../BrandOffer"
+import BestSellers from "../BestSellers"
 
 const Hero = () => {
   return (
     <div className="h-full w-full relative flex flex-col justify-center items-center">
         <CarouselWithContent />
         <VirtualAnalysis />
+        <BestSellers/>
         <NewIn />
         <BrandOffer />
         <Blogs />

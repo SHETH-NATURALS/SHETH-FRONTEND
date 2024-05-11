@@ -1,5 +1,3 @@
-import CarouselWithCards from "../../../layout/components/carousel-cards"
-
 const VirtualAnalysis = () => {
   return (
     <section className="bg-background w-full flex flex-col items-center gap-16 py-16">
@@ -51,10 +49,6 @@ const VirtualAnalysis = () => {
             Answer A Few Questions
           </button>
         </div>
-      </div>
-      <h3 className="font-semibold text-2xl my-12">Our Bestsellers</h3>
-      <div className="w-[1224px]">
-        <CarouselWithCards slides={4} />
       </div>
     </section>
   )
