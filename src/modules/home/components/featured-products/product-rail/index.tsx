@@ -4,6 +4,15 @@ import { Text } from "@medusajs/ui"
 import InteractiveLink from "@modules/common/components/interactive-link"
 import ProductPreview from "@modules/products/components/product-preview"
 import { ProductCollectionWithPreviews } from "types/global"
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "../../../../layout/components/carousel-cards/client-export"
+import ProductCard from "@modules/layout/components/product-card"
+import CarouselWithCards from '../../../../layout/components/carousel-cards'
 
 export default function ProductRail({
   collection,
@@ -19,25 +28,22 @@ export default function ProductRail({
   }
 
   return (
-    <div className="content-container py-12 small:py-24">
-      <div className="flex justify-between mb-8">
-        <Text className="txt-xlarge">{collection.title}</Text>
-        <InteractiveLink href={`/collections/${collection.handle}`}>
-          View all
-        </InteractiveLink>
+    <div className="w-full flex flex-col items-center justify-center">
+      <Text className="txt-xlarge">Our Best Sellers</Text>
+      <div className="w-[1224px] flex items-center flex-wrap justify-center">
+        <CarouselWithCards slides={4}>
+          {products &&
+            products.map((product, index) => (
+              <Slide index={index} key={product.id}>
+                <ProductCard
+                  productPreview={product}
+                  region={region}
+                  isFeatured
+                />
+              </Slide>
+            ))}
+        </CarouselWithCards>
       </div>
-      <ul className="grid grid-cols-2 small:grid-cols-3 gap-x-6 gap-y-24 small:gap-y-36">
-        {products &&
-          products.map((product) => (
-            <li key={product.id}>
-              <ProductPreview
-                productPreview={product}
-                region={region}
-                isFeatured
-              />
-            </li>
-          ))}
-      </ul>
     </div>
   )
 }

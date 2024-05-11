@@ -1,20 +1,44 @@
+import { Region } from "@medusajs/medusa"
+import { ProductPreviewType } from "types/global"
+import { retrievePricedProductById } from "@lib/data"
+import { getProductPrice } from "@lib/util/get-product-price"
+import PreviewPrice from "@modules/products/components/product-preview/price"
+import Image from "next/image"
+
 interface ProductProps {
-    title: string;
-    imageUrl: string;
-    description: string;
-    price: number;
+    productPreview: ProductPreviewType,
+    isFeatured?:boolean,
+    region: Region
 }
 
-const ProductCard = () => {
+const ProductCard = async ({ productPreview, isFeatured, region}: ProductProps) => {
+    const pricedProduct = await retrievePricedProductById({
+        id: productPreview.id,
+        regionId: region.id,
+      }).then((product) => product)
+    
+      if (!pricedProduct) {
+        return null
+      }
+    
+      const { cheapestPrice } = getProductPrice({
+        product: pricedProduct,
+        region,
+      })
     return (
         <div className="h-[500px] w-auto bg-white flex flex-col flex-shrink-0 relative">
             <div className="h-[384px]">
-                <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover h-full w-full" />
+                <Image
+                    src={productPreview.thumbnail ?? ''}
+                    alt={productPreview.title}
+                    width={384}
+                    height={384}
+                />
             </div>
             <div className="flex flex-col text-center justify-end absolute w-full h-full p-3 gap-4">
-                <p className="font-semibold text-primary">Marula Oil</p>
+                <p className="font-semibold text-primary">{ productPreview.title }</p>
                 <p>Product Description</p>
-                <p>Ksh 800</p>
+                { cheapestPrice && <PreviewPrice price={cheapestPrice}/>}
             </div>
         </div>
     )

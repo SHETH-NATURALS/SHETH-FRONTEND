@@ -35,7 +35,7 @@ export default async function ProductPreview({
   return (
     <LocalizedClientLink
       href={`/products/${productPreview.handle}`}
-      className="group"
+      className="group flex flex-col items-center gap-y-2 w-full"
     >
       <div data-testid="product-wrapper">
         <Thumbnail
@@ -43,7 +43,7 @@ export default async function ProductPreview({
           size="full"
           isFeatured={isFeatured}
         />
-        <div className="flex txt-compact-medium mt-4 justify-between">
+        <div className="flex flex-col items-center txt-compact-medium mt-4 justify-between">
           <Text className="text-ui-fg-subtle" data-testid="product-title">{productPreview.title}</Text>
           <div className="flex items-center gap-x-2">
             {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
