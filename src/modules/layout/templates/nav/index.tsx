@@ -6,8 +6,8 @@ import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
 
 // Icons Import
-import SearchIcon from '@mui/icons-material/Search';
-import LanguageIcon from '@mui/icons-material/Language';
+import SearchIcon from "@mui/icons-material/Search"
+import LanguageIcon from "@mui/icons-material/Language"
 
 // Logo Import
 import Image from "next/image"
@@ -31,16 +31,27 @@ export default async function Nav() {
                 height={50}
                 alt="Sheth Naturals Logo"
               />
-
             </LocalizedClientLink>
           </div>
           <div className="hidden h-full md:flex gap-x-8 items-center font-opensans font-bold">
-            <LocalizedClientLink className=" focus:text-primary" href="/">Home</LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">Mizizi</LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">Sheba</LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">Gifts & Sets</LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">Branches</LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/brand">Our Brand</LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">
+              Home
+            </LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">
+              Mizizi
+            </LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">
+              Sheba
+            </LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">
+              Gifts & Sets
+            </LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/">
+              Branches
+            </LocalizedClientLink>
+            <LocalizedClientLink className=" focus:text-primary" href="/brand">
+              Our Brand
+            </LocalizedClientLink>
             {/* <div className="h-full">
               <SideMenu regions={regions} />
             </div> */}
@@ -56,18 +67,19 @@ export default async function Nav() {
                 <SearchIcon />
               </LocalizedClientLink>
               <p className="text-xl">|</p>
-              <div className="flex">
+              {/* <div className="flex">
                 <LanguageIcon/>
                 <p className="">US<span className="text-xs">(EN)</span></p>
-              </div>
-              {/* <LocalizedClientLink
+              </div> */}
+              <LocalizedClientLink
                 className="hover:text-ui-fg-base"
                 href="/account"
                 data-testid="nav-account-link"
               >
                 Account
-              </LocalizedClientLink> */}
+              </LocalizedClientLink>
             </div>
+            <p className="text-xl">|</p>
             <Suspense
               fallback={
                 <LocalizedClientLink
