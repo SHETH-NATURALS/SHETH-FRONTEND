@@ -13,10 +13,12 @@ const Brand = () => {
                 <div className="w-[1016px] py-5">
                     <h2 className="font-semibold text-4xl">Our Brand</h2>
                     <div className="w-full h-[482px] my-3">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
                             alt="image 1"
                             className="h-full w-full object-cover"
+                            width={1016}
+                            height={482}
                         />
                     </div>
                     <p className="font-extralight capitalize tracking-wide">We believe that beauty thrives in diversity and discovery. Our purpose is to expand the way the world sees beauty by empowering the ExtraOrdinary in each of us.</p>
@@ -31,10 +33,12 @@ const Brand = () => {
                             Today, our team of experts works hard to create cosmetics that are not only effective but also sustainable and ethical.</p>
                     </div>
                     <div className="w-3/6">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
                             alt="image 1"
                             className="h-full w-full object-cover"
+                            width={1016}
+                            height={482}
                         />
                     </div>
                 </div>
