@@ -10,7 +10,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
 
 // Logo Import
-
+import Image from "next/image"
+import Logo from "@assets/sheth logo dark.png"
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
 
@@ -24,7 +25,13 @@ export default async function Nav() {
               className=""
               data-testid="nav-store-link"
             >
-              ShethLogo
+              <Image
+                src={Logo}
+                width={150}
+                height={50}
+                alt="Sheth Naturals Logo"
+              />
+
             </LocalizedClientLink>
           </div>
           <div className="hidden h-full md:flex gap-x-8 items-center font-opensans font-bold">
