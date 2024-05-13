@@ -1,10 +1,14 @@
+import Image from "next/image"
+
 const BrandOffer = () => {
   return (
     <section className="bg-background w-full flex flex-col items-center gap-16 py-16">
       <div className="w-full h-[382px] flex bg-primary-25 justify-center">
         <div className="w-[1224px] flex justify-between items-center">
           <div className="w-[575px] h-full">
-            <img
+            <Image
+              width={2560}
+              height={281}
               src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
@@ -45,7 +49,9 @@ const BrandOffer = () => {
           </button>
         </div>
         <div className="w-1/2">
-          <img
+          <Image
+            width={2560}
+            height={281}
             src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
             alt="image 1"
             className="h-full w-full object-cover"
