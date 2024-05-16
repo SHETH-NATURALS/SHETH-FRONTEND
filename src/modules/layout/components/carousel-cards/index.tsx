@@ -35,7 +35,7 @@ export default function Index(props: IndexProps) {
           <ButtonBack
             role="button"
             aria-label="slide backward"
-            className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-orange-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+            className="absolute flex justify-center items-center w-[30px] border-2 border-gray-500 h-[30px] z-30 left-0 ml-2 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
             id="prev"
           >
             <svg
@@ -47,7 +47,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M7 1L1 7L7 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -55,12 +55,12 @@ export default function Index(props: IndexProps) {
             </svg>
           </ButtonBack>
           <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-            <Slider>{props.children}</Slider>
+            <Slider className="flex gap-3">{props.children}</Slider>
           </div>
           <ButtonNext
             role="button"
             aria-label="slide forward"
-            className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+            className="absolute flex justify-center items-center z-30 w-[30px] border-2 border-gray-500 h-[30px] right-0 mr-2 bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             id="next"
           >
             <svg
@@ -72,7 +72,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M1 1L7 7L1 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -97,7 +97,7 @@ export default function Index(props: IndexProps) {
           <ButtonBack
             role="button"
             aria-label="slide backward"
-            className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+            className="absolute flex justify-center items-center w-[30px] border-2 border-gray-500 h-[30px] z-30 left-0 ml-8 bg-gray-300 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
             id="prev"
           >
             <svg
@@ -109,7 +109,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M7 1L1 7L7 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -122,7 +122,7 @@ export default function Index(props: IndexProps) {
           <ButtonNext
             role="button"
             aria-label="slide forward"
-            className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+            className="absolute flex justify-center items-center w-[30px] border-2 border-gray-500 h-[30px] z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             id="next"
           >
             <svg
@@ -134,7 +134,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M1 1L7 7L1 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -159,7 +159,7 @@ export default function Index(props: IndexProps) {
           <ButtonBack
             role="button"
             aria-label="slide backward"
-            className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+            className="absolute flex justify-center items-center w-[30px] border-2 border-gray-500 h-[30px] z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
             id="prev"
           >
             <svg
@@ -171,7 +171,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M7 1L1 7L7 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -184,7 +184,7 @@ export default function Index(props: IndexProps) {
           <ButtonNext
             role="button"
             aria-label="slide forward"
-            className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+            className="absolute flex justify-center items-center w-[30px] border-2 border-gray-500 h-[30px] z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             id="next"
           >
             <svg
@@ -196,7 +196,7 @@ export default function Index(props: IndexProps) {
             >
               <path
                 d="M1 1L7 7L1 13"
-                stroke="white"
+                stroke="black"
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"

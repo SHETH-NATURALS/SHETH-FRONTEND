@@ -15,7 +15,7 @@ export default function CarouselWithContent({ children }: {children: React.React
       loop={true}
       navigation={({ setActiveIndex, activeIndex, length }) => {
         return (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+          <div className="absolute bottom-4 left-2/4 z-30 flex -translate-x-2/4 gap-2">
             {new Array(length).fill("").map((_, i) => (
               <span
                 key={i}

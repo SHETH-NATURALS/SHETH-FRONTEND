@@ -137,7 +137,7 @@ export default function ProductActions({
 
   return (
     <>
-      <div className="flex flex-col gap-y-2" ref={actionsRef}>
+      <div className="flex flex-col gap-y-2 font-opensans" ref={actionsRef}>
         <div>
           {product.variants.length > 1 && (
             <div className="flex flex-col gap-y-4">
@@ -165,8 +165,7 @@ export default function ProductActions({
         <Button
           onClick={handleAddToCart}
           disabled={!inStock || !variant || !!disabled || isAdding}
-          variant="primary"
-          className="w-full h-10"
+          className="w-full h-[45px] bg-primary text-xl text-white rounded-none border-none outline-none hover:bg-primary-750"
           isLoading={isAdding}
           data-testid="add-product-button"
         >
