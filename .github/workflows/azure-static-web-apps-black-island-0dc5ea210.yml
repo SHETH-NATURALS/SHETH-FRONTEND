@@ -32,6 +32,13 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          NEXT_PUBLIC_MEDUSA_BACKEND_URL: "https://api.walobwa.xyz"
+          NEXT_PUBLIC_BASE_URL: "https://store.walobwa.xyz"
+          NEXT_PUBLIC_DEFAULT_REGION: "ke"
+          NEXT_PUBLIC_SEARCH_ENDPOINT: "http://127.0.0.1:7700"
+          NEXT_PUBLIC_INDEX_NAME: "products"
+          REVALIDATE_SECRET: "supersecret"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
