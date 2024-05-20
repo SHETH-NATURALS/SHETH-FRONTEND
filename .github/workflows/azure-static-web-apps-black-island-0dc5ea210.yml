@@ -19,12 +19,19 @@ jobs:
         with:
           submodules: true
           lfs: false
+
       - name: Use Node.js 18
         uses: actions/setup-node@v2
         with:
           node-version: 18.x
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build
+        run: npm run build
+
       - name: Build And Deploy
-        id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_ISLAND_0DC5EA210 }}
@@ -34,7 +41,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "out" # Built app content directory - optional
+          output_location: ".next" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
           NEXT_PUBLIC_MEDUSA_BACKEND_URL: "https://api.walobwa.xyz"
