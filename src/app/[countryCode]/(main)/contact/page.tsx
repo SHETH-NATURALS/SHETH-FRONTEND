@@ -21,7 +21,7 @@ const Contact = () => {
                 <p className="my-3">Sheth Client Service Center Is Happy to Help You With Any Questions You May Have Regarding Our Products And Corporate Information.</p>
                 <p>Contact Us by Phone:  1-802-526-2463  Monday to Friday, 9am to 9pm, and Saturday-Sunday, 9am to 6pm Or </p>
                 <p>Fill in The Form Below to Send Us An Email.</p>
-                <p className="text-lg text-[#606060] my-4">Please fill in this form to send us your inquiry. We'll be more than happy to help and will reply to you as soon as possible.</p>
+                <p className="text-lg text-[#606060] my-4">Please fill in this form to send us your inquiry. We&apos;ll be more than happy to help and will reply to you as soon as possible.</p>
             </div>
             <div className="bg-white w-[1224px] my-7 capitalize py-6 px-24">
                 <h3 className="font-bold text-primary text-2xl flex items-center gap-3"><EmailOutlinedIcon />write us</h3>

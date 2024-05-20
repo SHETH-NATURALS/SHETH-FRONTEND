@@ -44,21 +44,23 @@ const Brand = () => {
                 </div>
                 <div className="w-[1016px] flex flex-col capitalize gap-5 text-lg">
                     <h3 className="font-bold text-2xl w-full">Ethical And Sustainable Beauty</h3>
-                    <p>At Sheth cosmetic company , we believe that beauty should never come at the expense of animals, the environment, or our customers' health. That's why we've made sure that our products are vegan, curl-free, gluten-free, and packaged in recycled materials</p>
+                    <p>At Sheth cosmetic company , we believe that beauty should never come at the expense of animals, the environment, or our customers&apos; health. That&apos;s why we&apos;ve made sure that our products are vegan, curl-free, gluten-free, and packaged in recycled materials</p>
                     <h3 className="font-bold text-xl w-full">Vegan, Curl-Free</h3>
-                    <p>When we say our products are vegan, we mean that we never use any animal-derived ingredients or byproducts in our formulations. We believe that cruelty-free beauty is the way of the future, and we're proud to be a part of that movement.</p>
+                    <p>When we say our products are vegan, we mean that we never use any animal-derived ingredients or byproducts in our formulations. We believe that cruelty-free beauty is the way of the future, and we&apos;re proud to be a part of that movement.</p>
                     <h3 className="font-bold text-xl w-full">Gluten-Free Products</h3>
-                    <p>For those with sensitivities or allergies to gluten, we've made sure that our products are 100% gluten-free. You can use our products with confidence, knowing that they are safe and gentle on your skin.</p>
+                    <p>For those with sensitivities or allergies to gluten, we&apos;ve made sure that our products are 100% gluten-free. You can use our products with confidence, knowing that they are safe and gentle on your skin.</p>
                     <h3 className="font-bold text-xl w-full">Recycled Packaging</h3>
-                    <p>Finally, we're committed to doing our part for the environment, which is why we've packaged our products in recycled materials. By choosing our products, you're making a positive impact on the planet and reducing your environmental footprint.
-                        We're dedicated to providing you with high-quality, ethically-sourced beauty solutions that you can feel good about using.</p>
+                    <p>Finally, we&apos;re committed to doing our part for the environment, which is why we&apos;ve packaged our products in recycled materials. By choosing our products, you&apos;re making a positive impact on the planet and reducing your environmental footprint.
+                        We&apos;re dedicated to providing you with high-quality, ethically-sourced beauty solutions that you can feel good about using.</p>
                 </div>
                 <div className="w-[1016px] h-[402px] flex items-center capitalize gap-3 my-6">
                     <div className="w-[600px] h-full">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
                             alt="image 1"
                             className="h-full w-full object-cover"
+                            width={1016}
+                            height={482}
                         />
                     </div>
                     <div className="w-5/12 text-lg">
@@ -73,7 +75,7 @@ const Brand = () => {
                 <section className="w-full h-[575px] bg-[#0C0002] my-7"></section>
                 <div className="w-[1016px] flex flex-col capitalize text-lg">
                     <h3 className="font-bold text-2xl w-full my-4">Global branches & satisfied customers </h3>
-                    <p>At Sheth, we are proud to have a global presence with branches in multiple countries. Our mission is to provide high-quality cosmetic products that cater to a diverse range of skin types and tones, while also delivering exceptional customer service. Our team members are trained to listen to customers' concerns and preferences, and they use their expertise to recommend products that are tailored to their individual needs. In this section, we will provide an overview of our company's branches and the unique services they offer, as well as share some of the positive feedback we have received from our satisfied customers.</p>
+                    <p>At Sheth, we are proud to have a global presence with branches in multiple countries. Our mission is to provide high-quality cosmetic products that cater to a diverse range of skin types and tones, while also delivering exceptional customer service. Our team members are trained to listen to customers&apos; concerns and preferences, and they use their expertise to recommend products that are tailored to their individual needs. In this section, we will provide an overview of our company&apos;s branches and the unique services they offer, as well as share some of the positive feedback we have received from our satisfied customers.</p>
                 </div>
             </section>
         </section>

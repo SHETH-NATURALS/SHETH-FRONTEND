@@ -21,9 +21,9 @@ const BrandOffer = () => {
             <h2 className="font-semibold text-primary text-4xl my-3">
               Save Up To 50%
             </h2>
-            <p>Mother's Day Is Coming!</p>
+            <p>Mother&apos;s Day Is Coming!</p>
             <p>
-              For Everything She's Given You, It's Time To Give Back. Shower Her
+              For Everything She&apos;s Given You, It&apos;s Time To Give Back. Shower Her
               With Love, Happiness And The Best Of Sheth.
             </p>
             <p className="text-primary font-bold my-2">
