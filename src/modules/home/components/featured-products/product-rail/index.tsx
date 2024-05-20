@@ -24,7 +24,7 @@ export default function ProductRail({
     <div className="w-full flex flex-col items-center justify-center bg-transparent">
       <Text className="txt-xlarge font-opensans font-semibold">Our Best Sellers</Text>
       <div className="w-[1224px] flex items-center flex-wrap justify-center bg-transparent">
-        <CarouselWithCards slides={4} length={products.length}>
+        <CarouselWithCards slides={4} length={products && products.length}>
           {products &&
             products.map((product, index) => (
               <Slide index={index} key={product.id}>
