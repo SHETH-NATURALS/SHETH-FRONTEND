@@ -15,6 +15,7 @@ import ProductCard from "../product-card"
 interface IndexProps {
   slides: number
   children: React.ReactNode
+  length: number
 }
 
 export default function Index(props: IndexProps) {
@@ -26,7 +27,7 @@ export default function Index(props: IndexProps) {
         naturalSlideHeight={560}
         naturalSlideWidth={100}
         isIntrinsicHeight={true}
-        totalSlides={12}
+        totalSlides={props.length}
         visibleSlides={props.slides}
         step={1}
         infinite={true}

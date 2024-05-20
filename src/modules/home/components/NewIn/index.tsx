@@ -44,7 +44,7 @@ const NewInHelper = ({
           </p>
         </div>
         <div className="w-1/2">
-          <CarouselWithCards slides={2}>
+          <CarouselWithCards slides={2} length={products.length}>
             {products &&
               products.map((product, index) => (
                 <Slide index={index} key={product.id}>
