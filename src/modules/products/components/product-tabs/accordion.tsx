@@ -37,6 +37,7 @@ const Item: React.FC<AccordionItemProps> = ({
   subtitle,
   description,
   children,
+  //@ts-ignore
   className,
   headingSize = "large",
   customTrigger = undefined,
