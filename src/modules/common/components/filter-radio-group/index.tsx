@@ -33,12 +33,10 @@ const FilterRadioGroup = ({
           >
             {i.value === value && <EllipseMiniSolid />}
             <RadioGroup.Item
+            // @ts-ignore
               checked={i.value === value}
-              onClick={(e) =>
-                handleChange(
-                  e as unknown as ChangeEvent<HTMLButtonElement>,
-                  i.value
-                )
+              onClick={(e: ChangeEvent<HTMLButtonElement>) =>
+                handleChange(e, i.value)
               }
               className="hidden peer"
               id={i.value}
