@@ -1,11 +1,8 @@
-import { Box, SvgIcon, SvgIconProps } from "@mui/material";
-
-export interface FacebookIconProps extends SvgIconProps {}
-
-const FacebookIcon = (props: FacebookIconProps) => {
-  return (
-    <SvgIcon {...props}><path d="m15.128 12.797.373-2.457h-2.334V8.746c0-.672.326-1.328 1.371-1.328H15.6V5.326s-.963-.166-1.884-.166c-1.923 0-3.179 1.177-3.179 3.307v1.873H8.4v2.457h2.137v5.94a8.382 8.382 0 0 0 2.63 0v-5.94h1.961Z"/></SvgIcon>
-  );
-};
-
-export default FacebookIcon;
+import * as React from "react"
+import { SVGProps } from "react"
+const FacebookIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
+    <path d="m21.95 5.005-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z" />
+  </svg>
+)
+export default FacebookIcon

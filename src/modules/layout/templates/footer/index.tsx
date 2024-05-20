@@ -15,7 +15,7 @@ import GlutenIcon from "../../../../assets/GlutenIcon"
 import IngredientIcon from "../../../../assets/IngredientIcon"
 
 import { format } from "date-fns"
-
+import Image from "next/image"
 
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
@@ -29,19 +29,19 @@ export default async function Footer() {
     <footer className="border-t w-full">
       <div className="content-container flex flex-col w-full">
         <div className="flex justify-between bg-primary-25 px-28 py-8">
-          <div className="text-primary-600 flex gap-5">
-            <BunnyIcon/>
+          <div className="text-primary-600 flex gap-5 items-center">
+            <BunnyIcon/> 
             <p>No Test On Animals</p>
           </div>
-          <div className="text-primary-600 flex gap-5">
+          <div className="text-primary-600 flex gap-5 items-center">
             <IngredientIcon/>
             <p>No Animal Derived Ingredients</p>
           </div>
-          <div className="text-primary-600 flex gap-5">
+          <div className="text-primary-600 flex gap-5 items-center">
             <GlutenIcon/>
             <p>No Gluten, Or Gluten Byproducts</p>
           </div>
-          <div className="text-primary-600 flex gap-5">
+          <div className="text-primary-600 flex gap-5 items-center">
             <BulbIcon/>
             <p>Recyclable Packaging</p>
           </div>

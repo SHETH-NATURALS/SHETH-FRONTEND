@@ -1,13 +1,16 @@
-"use client"
-
-import { Box, SvgIcon, SvgIconProps } from "@mui/material";
-
-export interface IngredientIconProps extends SvgIconProps {}
-
-const IngredientIcon = (props: IngredientIconProps) => {
-  return (
-    <SvgIcon {...props}><Box strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8.889 8.035c4.065-2.691 8.272-.76 12.16-4.978.905-.984.38 11.04-4.487 15.595-3.557 3.328-9.05 2.957-10.902-.277-1.852-3.235-.836-7.649 3.229-10.34ZM5.211 18c-.862.472-1.754.752-2.927.857" component="path" sx={{stroke:(theme)=>theme.palette[props.color||'secondary'].main}}/></SvgIcon>
-  );
-};
-
-export default IngredientIcon;
+import * as React from "react"
+import { SVGProps } from "react"
+const IngredientIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    transform="matrix(0 1 1 0 0 0)"
+    viewBox="0 0 32 32"
+    width={40}
+    height={40}
+    {...props}
+  >
+    <title>{"leaf"}</title>
+    <path d="m28.082 9.534-.176.525c.674 3.296.425 6.877-1.276 10.787.247-2.511.206-4.913-.182-7.215-.458.891-1.042 1.755-1.64 2.624.085 2.497-.381 5.132-1.603 7.944.196-1.997.16-3.922-.036-5.794a21.341 21.341 0 0 1-2.697 2.587 19.528 19.528 0 0 1-1.421 4.92c.132-1.348.154-2.68.109-3.972-2.221 1.51-4.858 2.718-8.053 3.389 2.691-1.51 4.838-3.068 6.596-4.665a31.904 31.904 0 0 0-3.535-.51 16.922 16.922 0 0 1 4.628-.51c1.075-1.099 1.973-2.205 2.697-3.353a24.868 24.868 0 0 0-6.086-.328c2.355-1.14 4.702-1.538 7.033-1.385.602-1.24 1.014-2.523 1.312-3.826-1.773-.168-3.704.253-5.904.802 1.986-1.82 4.133-2.61 6.268-2.842.111-.903.169-1.808.18-2.741-9.848-7.007-7.239 16.56-22.665 20.346 12.693 7.863 37.271-3.539 26.451-16.782zm-2.294-7.688c.628-.305 1.39-.323 1.968.219.33 3.103-.68 9.663-4.665 14.249 3.039-5.538 3.261-9.548 2.697-14.467z" />
+  </svg>
+)
+export default IngredientIcon
