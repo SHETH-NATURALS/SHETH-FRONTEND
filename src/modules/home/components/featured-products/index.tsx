@@ -10,9 +10,10 @@ export default async function FeaturedProducts({
   collections: ProductCollectionWithPreviews[]
   region: Region
 }) {
-  return collections.map((collection) => (
-    <div className="bg-background w-full" key={collection.id}>
-      <ProductRail collection={collection} region={region} />
+  const mziziCollection = collections[1]
+  return (
+    <div className="bg-background w-full">
+      <ProductRail collection={mziziCollection} region={region} />
     </div>
-  ))
+  )
 }

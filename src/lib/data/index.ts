@@ -652,6 +652,52 @@ export const getProductsByCollectionHandle = cache(
   }
 )
 
+export const getMziziProducts = cache(async function getMziziProducts({
+  page = 0,
+  queryParams,
+  sortBy = "created_at",
+  countryCode,
+}: {
+  page?: number
+  queryParams?: StoreGetProductsParams
+  sortBy?: SortOptions
+  countryCode: string
+}): Promise<{
+  response: { products: ProductPreviewType[]; count: number }
+  nextPage: number | null
+  queryParams?: StoreGetProductsParams
+}> {
+  const limit = queryParams?.limit || 12
+
+  const {
+    response: { products, count },
+  } = await getProductsList({
+    pageParam: 0,
+    queryParams: {
+      ...queryParams,
+      limit: 100,
+    },
+    countryCode,
+  })
+
+  const sortedProducts = sortProducts(products, sortBy)
+
+  const pageParam = (page - 1) * limit
+
+  const nextPage = count > pageParam + limit ? pageParam + limit : null
+
+  const paginatedProducts = sortedProducts.slice(pageParam, pageParam + limit)
+
+  return {
+    response: {
+      products: paginatedProducts,
+      count,
+    },
+    nextPage,
+    queryParams,
+  }
+})
+
 // Category actions
 export const listCategories = cache(async function () {
   const headers = {

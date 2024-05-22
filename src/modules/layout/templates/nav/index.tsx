@@ -37,10 +37,10 @@ export default async function Nav() {
             <LocalizedClientLink className=" focus:text-primary" href="/">
               Home
             </LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">
+            <LocalizedClientLink className=" focus:text-primary" href="/mzizi">
               Mizizi
             </LocalizedClientLink>
-            <LocalizedClientLink className=" focus:text-primary" href="/">
+            <LocalizedClientLink className=" focus:text-primary" href="/sheba">
               Sheba
             </LocalizedClientLink>
             <LocalizedClientLink className=" focus:text-primary" href="/">

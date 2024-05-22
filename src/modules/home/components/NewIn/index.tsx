@@ -63,13 +63,8 @@ const NewInHelper = ({
 }
 
 const NewIn = ({ collections, region }: NewInProps) => {
-  return collections.map((collection) => (
-    <NewInHelper
-      key={collection.id}
-      collection={collection}
-      region={region}
-    />
-  ))
+  const mziziCollection = collections[1]
+  return <NewInHelper collection={mziziCollection} region={region} />
 }
 
 export default NewIn
